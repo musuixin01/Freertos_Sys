@@ -4,6 +4,14 @@
 
 主要功能包括温度采集与滤波、OLED 显示和按键交互、温度及传感器异常告警、蜂鸣器与 LED 提示、串口命令、Flash 参数保存与报警日志，以及 MPU6050 振动检测选做功能。
 
+## 系统架构
+
+<p align="center">
+  <img src="docs/assets/freertos-architecture.svg" alt="STM32 FreeRTOS 智能环境监测与告警任务架构图" width="100%">
+</p>
+
+<sub>任务关系根据 Core/Src/freertos.c 整理；图示不替代 Keil 编译、开发板烧录和传感器实测验收。</sub>
+
 ## 打开工程
 
 使用 Keil uVision 打开 `MDK-ARM/Freertos_Sys.uvprojx`。按工程配置安装 STM32F1xx Device Pack 和 Arm Compiler 5，然后执行 Rebuild。
