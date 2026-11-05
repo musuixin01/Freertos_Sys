@@ -1,0 +1,39 @@
+# Keil / ARM build outputs
+*.axf
+*.elf
+*.hex
+*.bin
+*.map
+*.lst
+*.lnp
+*.d
+*.o
+*.obj
+*.crf
+*.dep
+*.scvd
+*.build_log.htm
+*.uvopt
+*.uvoptx
+*.uvguix.*
+*.uvgui.*
+/MDK-ARM/Objects/
+/MDK-ARM/Listings/
+
+# Local editor state
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Credentials and local secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.p12
+*.pfx
+# Keil generated HTML reports and backup files
+/MDK-ARM/*.htm
+/MDK-ARM/**/*.htm
+*.bak
+*.Bak
